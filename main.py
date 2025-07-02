@@ -11,7 +11,8 @@ with sync_playwright() as playwright:
     try:
         config = get_config()
         browser = playwright.chromium.launch(headless=True)
-        context = browser.new_context(proxy={"server": config['proxy']})
+        #context = browser.new_context(proxy={"server": config['proxy']})
+        context = browser.new_context()
         context.add_cookies(parse_to_playwright_cookies(config['cookies']))
 
         page = context.new_page()
