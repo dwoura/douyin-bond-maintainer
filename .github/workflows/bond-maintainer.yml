@@ -2,7 +2,7 @@ name: Douyin Bond Maintainer
 
 on:
   schedule:
-    - cron: '15 3 * * *'  # 每天 UTC 5:00，即北京时间 13:00
+    - cron: '20 3 * * *'  # 每天 UTC 5:00，即北京时间 13:00
   workflow_dispatch:
 
 jobs:
